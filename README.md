@@ -17,10 +17,13 @@ This project focuses on building and evaluating machine learning models to forec
 * **Feature Importance:** Visualizes feature importance for the XGBoost model.
 * **Model Saving:** Saves trained models for future use.
 
-## Project Structure
+Okay, here is the project structure again, formatted for easy copy-pasting.
 
-.
-├── data/                       # Contains raw and processed datasets
+**Project Structure:**
+
+```
+bristol_house_price_prediction/
+├── data/
 │   ├── bristol_houseprice_dataset_2021.csv.xlsx  # Example raw input data
 │   ├── bristol_houseprice_dataset_2024.csv.xlsx  # Example raw input data
 │   ├── bristol_2021_2023_model_data.csv.xlsx    # Processed training data
@@ -37,6 +40,7 @@ This project focuses on building and evaluating machine learning models to forec
 ├── .gitignore                  # Specifies intentionally untracked files
 ├── README.md                   # Project overview and instructions
 └── requirements.txt            # List of Python dependencies
+```
 
 
 ## Setup Instructions
@@ -92,4 +96,4 @@ Follow these steps in sequence to reproduce the data processing, model training,
     python scripts/train_rf_forecast.py
     python scripts/train_xgb_model.py
     ```
-    These scripts will print evaluation metrics to the console, save trained models to the 
+    These scripts will print evaluation metrics to the console, save trained models to the `models/` directory, and save plots to the `plots/` directory.
